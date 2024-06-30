@@ -2,6 +2,17 @@
 #include <string.h>
 #include <stdlib.h>
 
+// Explanation:
+// The function longestPalindrome finds the longest palindromic substring in a string.
+// A palindrome is a string that reads the same backward as forward.
+// The function uses dynamic memory allocation to store the result.
+// The function uses a 2D array to store the length of the longest palindromic substring.
+// The function returns the longest palindromic substring.
+// The function frees the allocated memory before returning the result.
+// The function handles edge cases where the input string is NULL or empty.
+
+
+// Reverse a string.
 char *reverse_str(char *s)
 {
 	if (!s)
@@ -17,6 +28,7 @@ char *reverse_str(char *s)
 	return res;
 }
 
+// Check if a character is alphanumeric.
 int is_alpha(char c)
 {
 	return ((c >= '0' && c <= '9')
@@ -24,6 +36,7 @@ int is_alpha(char c)
 			|| (c >= 'A' && c <= 'Z'));
 }
 
+// Find the longest palindromic substring.
 char* longestPalindrome(char* s) {
 	int i = 0;
 	char *res = NULL;

@@ -4,6 +4,14 @@
 #include <stdbool.h>
 #include <limits.h>
 
+// Explanation:
+// The function addTwoNumbers adds two numbers represented by linked lists.
+// The function creates a new node with the given value.
+// The function adds a new node to the bottom of the list.
+// The function adds two numbers represented by linked lists.
+// The function creates a new node with the single digit.
+// The function appends the new node to the result list.
+// The function returns the result list.
 
 //  Definition for singly-linked list.
 struct ListNode {
@@ -11,6 +19,7 @@ struct ListNode {
 	struct ListNode *next;
 };
 
+// Create a new node with the given value. 
 struct ListNode *new_node(int i)
 {
 	struct ListNode *new;
@@ -24,6 +33,7 @@ struct ListNode *new_node(int i)
 	return (new);
 }
 
+// Add a new node to the bottom of the list.
 struct ListNode *add_btm(struct ListNode *node, int i)
 {
 	struct ListNode    *new;
@@ -44,6 +54,7 @@ struct ListNode *add_btm(struct ListNode *node, int i)
 	return (node);
 }
 
+// Add two numbers represented by linked lists.
 struct ListNode *addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 	struct ListNode *result = NULL;
 	struct ListNode **node = &result;
